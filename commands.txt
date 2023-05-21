@@ -1,0 +1,19 @@
+$ hadoop version 
+
+cd /$Hadoop_Home/sbin/ 
+$ start-dfs.sh 
+$ start-yarn.sh
+$cd /$Hadoop_Home/bin/ 
+$ hdfs dfs -mkdir -p hdfs://localhost:9000/user/Hadoop/twitter_data 
+
+
+cd $FLUME_HOME 
+
+flume-ng agent --conf ./conf/ -f conf/twitter.conf Dflume.root.logger=DEBUG,console -n TwitterAgent
+
+or
+
+flume-ng agent -n TwitterAgent -c conf -f C:/Flume/conf/twitter.conf -property flume.root.logger=DEBUG,console
+
+
+http://localhost:9870/  -- verify result
