@@ -7,7 +7,7 @@ This project Process Twitter Data using Flume and stores it in Hadoop. The data 
 * Error Handling: Handle common errors and provide troubleshooting tips for a smooth workflow.
 
 ## Architecture
-
+![twitter_data](https://github.com/Ganesh-Bollapalli/TwitterData-Analysis-using-Flume/assets/131467608/02b77b28-324f-4e3d-9c63-10a8a79795e6)
 ## Environment SetUp
 ### Hardware Used
 #### Local Machine:
